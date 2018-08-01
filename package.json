@@ -2,7 +2,7 @@
   "name": "switch",
   "version": "1.0.0",
   "private": true,
-  "description": "Верстка макета Switch",
+  "description": "Верстка макета Евраз",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "8.3.x",
