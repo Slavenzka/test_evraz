@@ -1,0 +1,27 @@
+.header-main__wrapper {
+  display: flex;
+  padding-top: 21px;
+}
+
+.header-main__logo {
+  margin-top: 20px;
+}
+
+.header-main__counter {
+  margin-left: 111px;
+  padding: 18px 0 15px 0;
+  width: 60px;
+  height: 27px;
+  font-family: $font-family__main;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.8px;
+  text-align: center;
+  color: rgb(35, 31, 32);
+  background-color: rgb(227, 227, 228);
+  border-radius: 50%;
+}
+
+.header-main__nav-corporate {
+  margin-left: 45px;
+}

@@ -17,6 +17,15 @@ img {
 }
 
 body {
-  font-family: $font-family__main;
-  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  // background-image: linear-gradient(rgb(246, 246, 246), rgb(246, 246, 246));
+  // background-size: 100% * 840 / 1280 670px;
+  // background-repeat: no-repeat;
+}
+
+.container {
+  min-width: 1230px;
+  padding: 0 100% * 25 / 1280;
+  box-sizing: content-box;
 }
