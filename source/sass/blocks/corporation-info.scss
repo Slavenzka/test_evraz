@@ -1,0 +1,62 @@
+.corporation-info {
+  display: grid;
+  grid-template-columns: 315px 315px auto;
+  grid-template-rows: minmax(120px, max-content) minmax(230px, auto);
+}
+
+.corporation-info__video {
+  grid-column: 2 / -1;
+  grid-row: 1;
+  margin: 0;
+  display: flex;
+}
+
+.corporation-info__video picture {
+  position: relative;
+  font-size: 0;
+  align-self: flex-end;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 12px);
+    left: calc(50% - 18px);
+    width: 35px;
+    height: 24px;
+    background-image: url("../img/corporate-info__icon--video@1x.png");
+  }
+}
+
+.corporation-info__title {
+  padding-top: 35px;
+  padding-left: 15px;
+}
+
+.corporation-info__source {
+  padding-left: 1px;
+  font-family: $font-family__main;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.6px;
+  color: rgb(129, 130, 133);
+  text-transform: uppercase;
+  font-style: normal;
+  word-spacing: -1px;
+}
+
+.corporation-info__event {
+  margin: 0;
+  margin-top: 11px;
+  max-width: 250px;
+  font-family: $font-family__main;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  color: rgb(35, 31, 32);
+  letter-spacing: -0.2px;
+}
+
+.corporation-info__appeal {
+  grid-column: 1 / -1;
+  grid-row: 2 / span 1;
+}
