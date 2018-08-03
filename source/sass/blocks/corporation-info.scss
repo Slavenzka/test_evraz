@@ -24,6 +24,11 @@
     width: 35px;
     height: 24px;
     background-image: url("../img/corporate-info__icon--video@1x.png");
+    background-size: cover;
+
+    @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
+      background-image: url("../img/corporate-info__icon--video@2x.png");
+    }
   }
 }
 
