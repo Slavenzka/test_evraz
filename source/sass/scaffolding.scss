@@ -43,13 +43,13 @@ main {
   margin-top: -134px;
   padding-top: 181px;
   background-image: linear-gradient(rgb(246, 246, 246), rgb(246, 246, 246));
-  background-size: 840px 100%;
+  background-size: 840px 300px;
   background-repeat: no-repeat;
 }
 
 @media (min-width: 1280px) {
   main {
-    background-size: calc(840px + 100vw - 1280px) 100%;
+    background-size: calc(840px + 100vw - 1280px) 671px;
   }
 }
 
