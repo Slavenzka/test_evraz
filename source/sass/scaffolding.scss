@@ -19,13 +19,42 @@ img {
 body {
   margin: 0;
   padding: 0;
-  // background-image: linear-gradient(rgb(246, 246, 246), rgb(246, 246, 246));
-  // background-size: 100% * 840 / 1280 670px;
-  // background-repeat: no-repeat;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  font-size: 0;
 }
 
 .container {
   min-width: 1230px;
   padding: 0 100% * 25 / 1280;
   box-sizing: content-box;
+}
+
+main {
+  margin-top: -134px;
+  padding-top: 181px;
+  background-image: linear-gradient(rgb(246, 246, 246), rgb(246, 246, 246));
+  background-size: 840px 300px;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1280px) {
+  main {
+    background-size: calc(840px + 100vw - 1280px) 671px;
+  }
+}
+
+main > .container {
+  display: grid;
+  grid-template-columns: auto 460px;
+  grid-template-rows: minmax(350px auto) minmax(488px auto);
 }

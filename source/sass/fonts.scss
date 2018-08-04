@@ -39,6 +39,15 @@
   font-weight: 700;
   font-display: swap;
   src:
-    url("../fonts/pragmatica_bold.woff2") format("woff2"),
-    url("../fonts/pragmatica_bold.woff") format("woff");
+    url("../fonts/pragmatica-bold-cyrillic_[allfont.net].woff2") format("woff2"),
+    url("../fonts/pragmatica-bold-cyrillic_[allfont.net].woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pragmatica";
+  font-weight: 900;
+  font-display: swap;
+  src:
+    url("../fonts/Pragmatica-Black_36307.woff2") format("woff2"),
+    url("../fonts/Pragmatica-Black_36307.woff") format("woff");
 }
