@@ -232,8 +232,9 @@ main > .container {
   padding-left: 39px;
   list-style: none; }
 
-.user__item--search {
+.user__item--search .user__link {
   position: relative;
+  display: block;
   padding-left: 37px;
   font-family: "Pragmatica", "Arial", sans-serif;
   font-weight: 300;
@@ -241,7 +242,7 @@ main > .container {
   line-height: 16.8px;
   color: #818285;
   cursor: pointer; }
-  .user__item--search::before {
+  .user__item--search .user__link::before {
     content: "";
     position: absolute;
     top: 0;
@@ -251,15 +252,17 @@ main > .container {
     background-image: url("../img/user__icon--search@1x.png");
     background-size: cover; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      .user__item--search::before {
+      .user__item--search .user__link::before {
         background-image: url("../img/user__icon--search@2x.png"); } }
 
 .user__item--mail {
+  margin-top: 14px;
   margin-left: 55px;
   width: 20px; }
 
 .user__item--mail .user__link {
   position: relative;
+  display: block;
   font-size: 0; }
   .user__item--mail .user__link::before {
     content: "";
