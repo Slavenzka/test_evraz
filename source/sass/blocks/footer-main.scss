@@ -1,0 +1,7 @@
+.footer-main .container {
+  display: grid;
+  grid-template-columns: repeat(4, 285px);
+  justify-content: space-between;
+  padding-top: 55px;
+  padding-bottom: 36px;
+}
