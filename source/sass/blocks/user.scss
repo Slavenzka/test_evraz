@@ -77,16 +77,14 @@
 }
 
 .user__item--profile {
-  margin-top: -12px;
-  margin-left: 68px;
+  margin-top: -7px;
+  margin-left: 48px;
 }
 
 .user__item--profile .user__link {
-  display: flex;
-  align-items: center;
-  padding: 5px 6px 5px 6px;
+  padding: 10px 22px 13px 6px;
   min-width: 142px;
-  font-size: 0;
+  height: 40px;
   background-color: $background-color__button;
   box-sizing: border-box;
   border-radius: 20px;
@@ -94,10 +92,11 @@
 
 .user__avatar {
   border-radius: 50%;
+  vertical-align: middle;
 }
 
 .user__link span {
-  margin-left: 13px;
+  padding-left: 9px;
   font-family: $font-family__main;
   font-weight: 300;
   font-size: 14px;

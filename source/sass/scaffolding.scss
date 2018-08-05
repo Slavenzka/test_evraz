@@ -35,7 +35,7 @@ body {
 
 .container {
   min-width: 1230px;
-  padding: 0 100% * 25 / 1280;
+  padding: 0 25px;
   box-sizing: content-box;
 }
 
@@ -43,11 +43,15 @@ main {
   margin-top: -134px;
   padding-top: 181px;
   background-image: linear-gradient(rgb(246, 246, 246), rgb(246, 246, 246));
-  background-size: 840px 300px;
+  background-size: 840px 671px;
   background-repeat: no-repeat;
 }
 
 @media (min-width: 1280px) {
+  .container {
+    padding: 0 100% * 25 / 1280;
+  }
+
   main {
     background-size: calc(840px + 100vw - 1280px) 671px;
   }

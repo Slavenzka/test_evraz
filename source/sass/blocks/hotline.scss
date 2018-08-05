@@ -1,0 +1,60 @@
+.hotline__title {
+  margin: 0;
+  padding: 0;
+  padding-left: 1px;
+  font-family: $font-family__main;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 13px;
+  letter-spacing: -0.1px;
+  color: $background-color__square--dark;
+}
+
+.hotline__list {
+  margin: 0;
+  margin-top: 17px;
+  padding: 0;
+  padding-left: 4px;
+  list-style: none;
+}
+
+.hotline__item {
+  font-family: $font-family__main;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  color: rgb(33, 31, 31);
+}
+
+.hotline__item:not(:first-of-type) {
+  margin-top: 13px;
+}
+
+.hotline__purpose {
+  display: block;
+  margin-top: 2px;
+  font-weight: 400;
+  color: rgb(128, 129, 133);
+}
+
+.hotline__item.hotline__item--mail {
+  margin-top: 12px;
+  color: $background-color__square--dark;
+}
+
+.hotline__write-now {
+  display: inline-block;
+  margin-top: 22px;
+  margin-left: 1px;
+  padding: 17px 22px 14px 20px;
+  font-family: $font-family__main;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 9px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: rgb(33, 31, 31);
+  vertical-align: middle;
+  background-color: $background-color__button;
+  border-radius: 19px;
+}

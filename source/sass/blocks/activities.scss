@@ -10,7 +10,8 @@
   padding-right: 50px;
 }
 
-.activities__item:not(.activities__item--interview) {
+.activities__item:not(.activities__item--interview) .activities__link {
+  display: block;
   padding-left: 68px;
 }
 
@@ -74,7 +75,7 @@
   color: rgb(238, 45, 36);
 }
 
-.activities__item--urgent {
+.activities__item--urgent .activities__link {
   position: relative;
 
   &::before {
@@ -97,7 +98,7 @@
   margin-top: 37px;
 }
 
-.activities__item--report {
+.activities__item--report .activities__link {
   position: relative;
 
   &::before {
