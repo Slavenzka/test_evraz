@@ -62,3 +62,18 @@ main > .container {
   grid-template-columns: auto 460px;
   grid-template-rows: minmax(350px auto) minmax(488px auto);
 }
+
+@media (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body {
+    background-image: linear-gradient(rgb(246, 246, 246), rgb(246, 246, 246));
+    background-size: 840px 685px;
+    background-repeat: no-repeat;
+  }
+
+  main > .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 60px;
+  }
+}

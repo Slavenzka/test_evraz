@@ -185,3 +185,9 @@
 .activities__page--active {
   background-color: $background-color__button;
 }
+
+@media (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .activities {
+    width: 460px;
+  }
+}
