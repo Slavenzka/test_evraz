@@ -84,7 +84,7 @@ main {
   .container {
     padding: 0 1.95313%; }
   main {
-    background-size: calc(840px + 100vw - 1280px) 671px; } }
+    background-size: calc(840px + 100% - 1280px) 671px; } }
 
 main > .container {
   display: grid;

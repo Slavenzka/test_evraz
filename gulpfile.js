@@ -22,11 +22,18 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+
+gulp.task("normalize-min", function() {
+  gulp.src("source/css/normalize.css")
+  .pipe(minify())
+  .pipe(rename("normalize.min.css"))
+  .pipe(gulp.dest("build/css"))
 });
 
 gulp.task("images", function() {
@@ -95,6 +102,7 @@ gulp.task("build", function (done) {
     "images",
     "webp",
     "style",
+    "normalize-min",
     done
   );
 });
