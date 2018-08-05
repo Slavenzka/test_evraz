@@ -173,3 +173,9 @@
     }
   }
 }
+
+@media (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  article.news {
+    width: 100%;
+  }
+}

@@ -29,6 +29,13 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
+gulp.task("normalize-min", function() {
+  gulp.src("source/css/normalize.css")
+  .pipe(minify())
+  .pipe(rename("normalize.min.css"))
+  .pipe(gulp.dest("source/css"))
+});
+
 gulp.task("images", function() {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin ([
@@ -95,6 +102,7 @@ gulp.task("build", function (done) {
     "images",
     "webp",
     "style",
+    "normalize-min",
     done
   );
 });

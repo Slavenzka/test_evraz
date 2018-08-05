@@ -5,3 +5,17 @@
   padding-top: 55px;
   padding-bottom: 36px;
 }
+
+@media (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .footer-main .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-main__corporate,
+  .footer-main__hotline,
+  .footer-main__stocks,
+  .footer-main__service {
+    width: 285px;
+  }
+}
