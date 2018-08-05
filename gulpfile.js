@@ -22,10 +22,10 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
 
@@ -33,7 +33,7 @@ gulp.task("normalize-min", function() {
   gulp.src("source/css/normalize.css")
   .pipe(minify())
   .pipe(rename("normalize.min.css"))
-  .pipe(gulp.dest("build/css"))
+  .pipe(gulp.dest("source/css"))
 });
 
 gulp.task("images", function() {
