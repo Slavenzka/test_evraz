@@ -77,21 +77,12 @@
 
 .activities__item--urgent .activities__link {
   position: relative;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -6px;
-    left: 8px;
-    width: 30px;
-    height: 31px;
-    background-image: url("../img/activities__icon--attention@1x.png");
-    background-size: cover;
-
-    @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
-      background-image: url("../img/activities__icon--attention@2x.png");
-    }
-  }
+.activities__item--urgent .activities__icon {
+  position: absolute;
+  top: -6px;
+  left: 8px;
 }
 
 .activities__item.activities__item--report {
@@ -100,21 +91,12 @@
 
 .activities__item--report .activities__link {
   position: relative;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -6px;
-    left: 11px;
-    width: 24px;
-    height: 31px;
-    background-image: url("../img/activities__icon--report@1x.png");
-    background-size: contain;
-
-    @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
-      background-image: url("../img/activities__icon--report@1x.png");
-    }
-  }
+.activities__item--report .activities__icon {
+  position: absolute;
+  top: -6px;
+  left: 11px;
 }
 
 .activities__item--report .activities__description {
@@ -141,24 +123,13 @@
   height: 25px;
   font-size: 0;
   background-color: transparent;
-  background-image: url("../img/activities__pagination--previous@1x.png");
-  background-size: cover;
   border: none;
   cursor: pointer;
-
-  @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
-    background-image: url("../img/activities__pagination--previous@2x.png");
-  }
 }
 
 .activities__button--next {
   margin-left: 57px;
   width: 13px;
-  background-image: url("../img/activities__pagination--next@1x.png");
-
-  @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
-    background-image: url("../img/activities__pagination--next@2x.png");
-  }
 }
 
 .activities__pagination {
