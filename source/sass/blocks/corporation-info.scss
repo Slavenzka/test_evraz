@@ -5,6 +5,7 @@
 }
 
 .corporation-info__video {
+  position: relative;
   grid-column: 2 / -1;
   grid-row: 1;
   margin: 0;
@@ -15,21 +16,13 @@
   position: relative;
   font-size: 0;
   align-self: flex-end;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: calc(50% - 12px);
-    left: calc(50% - 18px);
-    width: 35px;
-    height: 24px;
-    background-image: url("../img/corporate-info__icon--video@1x.png");
-    background-size: cover;
-
-    @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
-      background-image: url("../img/corporate-info__icon--video@2x.png");
-    }
-  }
+.corporate-info__icon {
+  position: absolute;
+  bottom: 38px;
+  left: 32px;
+  z-index: 1;
 }
 
 .corporation-info__title {

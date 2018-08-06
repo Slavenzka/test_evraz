@@ -1,6 +1,5 @@
 .user {
-  margin-left: auto;
-  width: 382px;
+  width: 342px;
 }
 
 .user__list {
@@ -8,65 +7,47 @@
   margin: 0;
   padding: 0;
   padding-top: 22px;
-  padding-left: 39px;
   list-style: none;
 }
 
+.user__item--search {
+  margin-top: -3px;
+}
+
 .user__item--search .user__link {
-  position: relative;
   display: block;
-  padding-left: 37px;
   font-family: $font-family__main;
   font-weight: 300;
   font-size: 14px;
   line-height: 16.8px;
+}
+
+.user__item--search .user__icon {
+  margin-top: 3px;
+}
+
+.user__item--search span {
+  display: inline-block;
+  margin-top: 3px;
+  margin-left: 16px;
   color: rgb(129, 130, 133);
-  cursor: pointer;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 1px;
-    width: 16px;
-    height: 16px;
-    background-image: url("../img/user__icon--search@1x.png");
-    background-size: cover;
-
-    @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
-      background-image: url("../img/user__icon--search@2x.png");
-    }
-  }
+  vertical-align: top;
 }
 
 .user__item--mail {
-  margin-top: 14px;
   margin-left: 55px;
-  width: 20px;
 }
 
 .user__item--mail .user__link {
   position: relative;
   display: block;
-  // width: 20px;
   font-size: 0;
 
   &::before {
-    content: "";
-    position: absolute;
-    top: -14px;
-    left: -1px;
-    width: 23px;
-    height: 16px;
-    background-image: url("../img/user__icon--mail@1x.png");
-    background-size: cover;
-  }
-
-  &::after {
     content: "12";
     position: absolute;
-    top: -22px;
-    left: 16px;
+    top: -8px;
+    left: 17px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,7 +63,7 @@
 
 .user__item--profile {
   margin-top: -7px;
-  margin-left: 48px;
+  margin-left: 46px;
 }
 
 .user__item--profile .user__link {
@@ -99,7 +80,7 @@
   vertical-align: middle;
 }
 
-.user__link span {
+.user__item--profile span {
   padding-left: 9px;
   font-family: $font-family__main;
   font-weight: 300;
